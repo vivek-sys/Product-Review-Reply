@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll ATS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h1>Payroll ATS</h1>
+            <div class="employee-details">
+                <label for="employee-name">Employee Name:</label>
+                <input type="text" id="employee-name" placeholder="Enter employee name">
+
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" placeholder="Enter designation">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob">
+
+                <label for="doj">Date of Joining:</label>
+                <input type="date" id="doj">
+
+                <label for="pan">PAN:</label>
+                <input type="text" id="pan" placeholder="Enter PAN number">
+
+                <label for="bank">Bank A/C No:</label>
+                <input type="text" id="bank" placeholder="Enter bank account number">
+            </div>
+
+            <div class="earnings-deductions">
+                <h4>Earnings</h4>
+                <label for="basic">Basic:</label>
+                <input type="number" id="basic" placeholder="Enter basic salary">
+
+                <label for="hra">HRA:</label>
+                <input type="number" id="hra" placeholder="Enter HRA">
+
+                <label for="da">DA:</label>
+                <input type="number" id="da" placeholder="Enter DA">
+
+                <label for="medical">Medical:</label>
+                <input type="number" id="medical" placeholder="Enter medical">
+
+                <h4>Deductions</h4>
+                <label for="pf">PF:</label>
+                <input type="number" id="pf" placeholder="Enter PF deduction">
+
+                <label for="tax">Tax:</label>
+                <input type="number" id="tax" placeholder="Enter tax">
+            </div>
+
+            <button id="generate-btn">Generate Salary Slip</button>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h3>Payroll ATS</h3>
+            <textarea id="salary-slip" placeholder="Generated salary slip will appear here..." rows="20" cols="50"></textarea>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

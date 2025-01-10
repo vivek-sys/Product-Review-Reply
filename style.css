@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #393939;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    background: #e7e1f6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.right-section h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.left-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+}
+
+.left-section input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.left-section input:focus {
+    outline: none;
+    border-color: #6d58f1;
+    box-shadow: 0 0 5px rgba(109, 88, 241, 0.5);
+}
+
+.left-section button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #6d58f1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.left-section button:hover {
+    background-color: #5747c7;
+}
+
+.right-section {
+    text-align: left;
+}
+
+.right-section h3 {
+    color: #6d58f1;
+    font-size: 34px;
+}
+
+.right-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right-section li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.right-section li:last-child {
+    border-bottom: none;
+}
+
+.right-section li i {
+    font-size: 18px;
+    color: #6d58f1;
+    margin-right: 10px;
+}
+
+.right-section li span {
+    font-size: 16px;
+    color: #555;
+}
+
+
+textarea {
+    width: 100%;
+    height: 990px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #6d58f1;
+    box-shadow: 0 0 5px rgba(109, 88, 241, 0.5);
+    background-color: #ffffff;
+}
