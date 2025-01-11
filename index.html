@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Reply</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Review</h1>
+
+        <!-- Review Input Section -->
+        <div class="review-form">
+            <h2>Leave a Review</h2>
+            <label for="product-link">Product Link:</label>
+            <input type="url" id="product-link" placeholder="Enter product link" required>
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" min="1" max="5" required>
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" rows="4" placeholder="Write your feedback here..." required></textarea>
+            <button id="submit-btn">Submit Review</button>
+        </div>
+
+        <!-- Display Review Section -->
+        <div class="review-output">
+            <h2>Customer Review</h2>
+            <p id="review-display">No review submitted yet.</p>
+        </div>
+
+        <!-- Reply Section -->
+        <div class="reply-section">
+            <h2>Our Reply</h2>
+            <p id="reply-display">Awaiting customer feedback...</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
